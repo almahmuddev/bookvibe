@@ -6,7 +6,7 @@
 
 
 // import { BrowserRouter, Routes, Route, ScrollRestoration } from 'react-router-dom'
-import { HashRouter , Routes, Route, ScrollRestoration } from 'react-router-dom'
+import { BrowserRouter , Routes, Route, ScrollRestoration } from 'react-router-dom'
 import { CartProvider } from './context/CartContext'
 import Navbar from './components/Navbar'
 import Home from './pages/Home'
@@ -22,7 +22,7 @@ function ScrollToTop() {
 
 export default function App() {
   return (
-    <HashRouter>
+    <BrowserRouter>
       <CartProvider>
         <div className="min-h-screen bg-dark-400">
           <Navbar />
@@ -74,6 +74,6 @@ export default function App() {
           </footer>
         </div>
       </CartProvider>
-    </HashRouter >
+    </BrowserRouter >
   )
 }
